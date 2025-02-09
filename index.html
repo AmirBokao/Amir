@@ -12,3 +12,45 @@
     <script src="script.js"></script>
 </body>
 </html>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    position: absolute;
+    animation: moveBall 4s linear infinite;
+}
+
+@keyframes moveBall {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 90%;
+    }
+    50% {
+        top: 90%;
+        left: 90%;
+    }
+    75% {
+        top: 90%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
